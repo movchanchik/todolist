@@ -1,4 +1,4 @@
-import { TodoItemType } from "../types/todo";
+import { TodoType } from "../types/todo";
 import { Formik, Form } from "formik";
 import { UpdateSchema } from "./formScheme";
 import { ItemType } from "../types/todo";
@@ -9,7 +9,7 @@ function CompletedTodoItem({ item, onClickRemove, onUpdateTodo }: ItemType) {
     onClickRemove(id);
   };
 
-  const handleReturn = (todo: TodoItemType) => {
+  const handleReturn = (todo: TodoType) => {
     onUpdateTodo(todo);
   };
 
